@@ -402,3 +402,42 @@ footer {
     }
 
 }
+
+/* =================================
+   11. LIGHT THEME
+================================= */
+
+body[data-theme="light"] {
+    --background: #f5f7fb;
+    --surface: #ffffff;
+    --surface-light: #eef2f7;
+    --text: #172033;
+    --muted: #596579;
+    --blue: #2563eb;
+    --green: #15803d;
+    --border: #dce2ec;
+}
+
+body[data-theme="light"] header {
+    background: rgba(245, 247, 251, 0.92);
+}
+
+
+/* =================================
+   12. THEME BUTTON
+================================= */
+
+.theme-toggle {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 9px 13px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    border-color: var(--blue);
+}
